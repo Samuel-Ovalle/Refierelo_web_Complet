@@ -1,0 +1,121 @@
+:root{
+    --color-1: #003366;
+    --color-2: #02B2E4;
+    --color-3: #F0F2F5;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--color-3);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 10% 1fr;
+}
+header {
+    background: linear-gradient(90deg, var(--color-1) 30%, var(--color-2));
+    height: 100%;
+    width: 100vw;
+    grid-column: 1/3;
+}
+header .barsMenu{
+    border: none;
+    background-color: transparent;
+    background: url(../../imagenes/bars_menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 7%;
+    margin-left: 2%;
+    margin-bottom: .5%;
+    display: inline-flex;
+}
+header .nombreAliado{
+    font-size: 25px;
+    font-weight: 100;
+    position: relative;
+    bottom: 30%;
+    left: 2%;
+}
+header img{
+    height: 90%;
+    margin-top: .2%;
+    position: relative;
+    left: 62.5%;
+}
+nav{
+    background: linear-gradient(var(--color-1) , var(--color-2) 150%);
+    height: 100%;
+    display: inline-block;
+    transition: width .2s;
+}
+.navLong{
+    width: 100%;
+}
+.navLong li{
+    background: rgba(255, 255, 255, .04);
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+.navLong ul li img{
+    height: min-content;
+    width: 30%;
+    object-fit: contain;
+    display: inline;
+}
+.navLong li a{
+    padding-left: 2%;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.navLong .logoLetra{
+    height: min-content;
+    width: 45%;
+    object-fit: contain;
+    position: relative;
+    top: 52%;
+    left: 25%;
+    transition: top .2s, left .2s;
+}
+.navSmile{
+    width: 50%;
+}
+.navSmile li{
+    background: rgba(255, 255, 255, .04);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navSmile ul li img{
+    height: min-content;
+    width: 60%;
+    object-fit: contain;
+    display: inline;
+    transition: width .2s;
+}
+.navSmile .logoLetra{
+    height: min-content;
+    width: 85%;
+    object-fit: contain;
+    position: relative;
+    top: 57%;
+    left: 7%;
+    transition: top .2s, left .2s;
+}

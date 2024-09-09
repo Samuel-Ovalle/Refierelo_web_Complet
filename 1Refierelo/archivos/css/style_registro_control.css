@@ -1,0 +1,189 @@
+main{
+    height: 90vh;
+    width: 89.5vw;
+
+    position: relative;
+    right: 0;
+    transition: right 0.2s, width 0.2s;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1{
+    color: var(--color-1);
+    margin-top: 1%;
+    margin-bottom: .5%;
+    font-weight: 400;
+}
+
+main form{
+    border-radius: 20px;
+    background: linear-gradient(#003366, #02B5E7);
+    height: 43%;
+    width: 49%;
+    padding: 3% 4%;
+    text-align: center;
+}
+main form .infoBox{
+    height: 60%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 12.5%;
+    column-gap: 3%;
+}
+main form .infoBox input{
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    padding-left: 3%;
+}
+main form .infoBox input:nth-child(5){
+    grid-column: 1/3;
+}
+main form .sexBox{
+    height: 20%;
+    width: 70%;
+    margin-top: 2.5%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main form .sexBox input[type="checkbox"]{
+    display: none;
+}
+main form .sexBox label{
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    top: 40%;
+}
+main form .sexBox label::before{
+    content: '';
+    border-radius: 50%;
+    background: #fff;
+
+    height: 20px;
+    width: 20px;
+
+    position: absolute;
+    bottom: 100%;
+    right: 42.5%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+main form .sexBox .check::after{
+    content: '';
+    border-radius: 50%;
+    background: var(--color-2);
+
+    height: 14px;
+    width: 14px;
+
+    position: absolute;
+    bottom: 118%;
+    right: 45.4%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+main form input[type="checkbox"]{
+    display: none;
+}
+main form label{
+    cursor: pointer;
+    height: min-content;
+    font-size: 14px;
+    font-weight: 400;
+}
+main form label::before{
+    content: '';
+    border-radius: 5px;
+    background: #fff;
+
+    height: 12%;
+    width: 4.7%;
+
+    position: relative;
+    bottom: 2.5%;
+    right: 2%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+main form .checkL::after{
+    content: '';
+    background-color: transparent;
+    background-image: url('../../imagenes/chulo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 25px;
+    width: 25px;
+
+    position: absolute;
+    right: 69.2%;
+    top: 43%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+main form input[type="submit"]{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(#85d619, #17a308);
+    height: 15%;
+    width: 18%;
+    letter-spacing: .5px;
+}
+
+main section{
+    margin-top: 3%;
+    width: 90%;
+}
+main section .lista{
+    margin-bottom: .5%;
+    display: grid;
+    grid-template-columns: 12% 12% 17% 17% 17% 10% 10.8%;
+    grid-column-gap: .7%;
+}
+main section .lista span{
+    color: #7b7d7f;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+main section .boxInfo{
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: 12% 12% 17% 17% 17% 10% 10.8%;
+    grid-template-rows: 160%;
+    grid-column-gap: .7%;
+}
+main section .boxInfo input{
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.activo{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(#85d619, #17a308);
+    height: 100%;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.activar{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(#02B5E7, #003366);
+    height: 100%;
+    letter-spacing: 1px;
+    font-weight: 700;
+}

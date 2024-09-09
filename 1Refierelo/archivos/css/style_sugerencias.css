@@ -1,0 +1,115 @@
+body{
+    background: #fff;
+}
+main{
+    height: 90vh;
+    width: 89.5vw;
+
+    position: relative;
+    right: 0;
+    transition: right 0.2s, width 0.2s;
+    overflow-y: auto;
+    display: inline-flex;
+    justify-content: center;
+}
+main .content{
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+main .content img{
+    height: 17%;
+    margin-top: 5%;
+}
+main .content p{
+    color: var(--color-1);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4%;
+}
+main .content p span{
+    color: var(--color-2);
+    font-weight: 400;
+}
+main .content form{
+    height: 70%;
+    width: 100%;
+}
+main .content form label{
+    color: var(--color-1);
+    display: block;
+    font-weight: 400;
+    text-align: start;
+}
+main .content form label span{
+    color: var(--color-2);
+    font-weight: 400;
+}
+main .content form .arrowDown{
+    background: transparent;
+    background-image: url(../../imagenes/flecha_abajo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 20px;
+    width: 20px;
+
+    position: absolute;
+    top: 55.2%;
+    left: 62.5%;
+}
+main .content form input{
+    border: none;
+    border-radius: 5px;
+    background: #f0f2f5;
+    color: var(--color-1);
+    height: 6%;
+    width: 100%;
+    margin-bottom: 4%;
+}
+main .content form input:focus-visible{
+    outline: 2px solid #00DFEE;
+}
+#sugerencia{
+    border: none;
+    border-radius: 5px;
+    background: #f0f2f5;
+    color: var(--color-1);
+    height: 20%;
+    width: 100%;
+    margin-bottom: 4%;
+    resize: none;
+}
+#sugerencia:focus-visible{
+    outline: 2px solid #00DFEE;
+}
+main .content form select{
+    border: none;
+    border-radius: 5px;
+    background: #f0f2f5;
+    color: var(--color-1);
+
+    height: 6%;
+    width: 100%;
+    margin-bottom: 4%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+}
+main .content form select:focus-visible{
+    outline: 2px solid #00DFEE;
+}
+main .content form input[type="submit"]{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(#02B5E7, #003366);
+    color: #fff;
+    height: 9%;
+    width: 30%;
+    letter-spacing: 1px;
+    font-weight: 700;
+}

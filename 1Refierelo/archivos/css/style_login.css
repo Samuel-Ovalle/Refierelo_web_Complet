@@ -1,0 +1,305 @@
+:root{
+    --color-1: #003366;
+    --color-2: #E4E6EB;
+    --color-3: #00DFEE;
+    --color-4: #545454;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+}
+
+header{
+    background: linear-gradient(20deg, #1970a9, #117bb2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    height: 60px;
+    width: 200px;
+    margin: 10px;
+
+    object-fit: contain;
+}
+main form{
+    width: 64%;
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(7, min-content);
+}
+main{
+    padding-top: 10px;
+
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h2{
+    color: var(--color-1);
+
+    font-size: 16px;
+    font-weight: 500;
+}
+main form .opciones{
+    width: 100%;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: center;
+}
+main form .tipoPersona{
+    background: var(--color-2);
+    color: var(--color-1);
+    border-radius: 5px;
+
+    height: 30px;
+    width: 97.5%;
+    margin-top: 15px;
+    padding-left: 40px;
+
+    font-size: 12.5px;
+    font-weight: 600;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: none !important;
+    position: relative;
+    right: 1%;
+}
+main form .tipoPersona:focus-visible{
+    outline: 3px solid var(--color-3);
+}
+main form .placeholder{
+    background: #fff;
+    color: var(--color-1);
+
+    width: 70px;
+
+    text-align: center;
+    position: relative;
+    bottom: 55%;
+    right: 35%;
+    display: inline;
+    font-size: 10px;
+    text-align: start;
+}
+main form .arrowDown{
+    background: transparent;
+    background-image: url(../../imagenes/flecha_abajo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 20px;
+    width: 20px;
+
+    position: relative;
+    top: 50%;
+    left: 43%;
+    z-index: 1;
+}
+main form .tipoPersona option {
+    border: none;
+    background-color: #fff;
+    color: var(--color-1);
+    padding: 5px;
+}
+main form input{
+    border: none;
+    background: var(--color-2);
+    border-radius: 5px;
+    color: var(--color-1);
+
+    height: 30px;
+    width: 95.5%;
+    margin: 5px 0px 5px 0px;
+    padding-left: 10px;
+
+    display: block;
+    grid-column: 1/3;
+}
+main form input::placeholder{
+    color: var(--color-1);
+    font-size: 11px;
+}
+main form input:focus-visible{
+    outline: 3px solid var(--color-3);
+}
+main form .terminsoCondiciones{
+    width: 100%;
+    text-align: start;
+    grid-column: 1/3;
+}
+main form .checkText{
+    color: #545454;
+
+    height: 25px;
+
+    display: block;
+    font-size: 10px;
+    text-align: start;
+    display: flex;
+    align-items: end;
+}
+main form .checkbox:before{
+    content: '';
+    background: var(--color-2);
+    border-radius: 3px;
+
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin-right: 5px;
+
+    position: relative;
+    left: 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+main form input[type="checkbox"]{
+    display: none;
+}
+main form input[type="checkbox"]:checked + .checkText::before{
+    content: '';
+    background: var(--color-2);
+    background-image: url(../../imagenes/chulo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 15px;
+    width: 15px;
+
+    font-family: fontAwesome;
+}
+main form b{
+    padding-left: 2px;
+    color: var(--color-1);
+    font-weight: 900;
+}
+main form input[type="submit"]{
+    background: linear-gradient(#02B5E7, var(--color-1));
+    border-radius: 10px;
+    color: #fff;
+
+    height: 35px;
+    width: 100px;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 25%;
+
+    font-size: 10px;
+    grid-column: 1/3;
+    position: relative;
+    left: 10%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+main form .tItem{
+    background: var(--color-2);
+    color: var(--color-1);
+    border-radius: 5px;
+    box-shadow: none;
+    border: none !important;
+
+    height: 75%;
+    width: min-content;
+    padding: 0px 5px 0px 5px;
+    margin-top: 4.5px;
+    display: inline;
+    grid-column: 1/2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    font-size: 12.5px;
+    font-weight: 600;
+    &:focus-visible{
+        outline: 3px solid var(--color-3);
+    }
+}
+main form .tItem option{
+    border: none;
+    background-color: #fff;
+    color: var(--color-1);
+    padding: 5px;
+}
+main form .fItem{
+    width: 94.4%;
+    margin-left: 5px;
+    display: inline;
+    grid-column: 2/3;
+}
+
+@media only screen and (min-width: 700px){
+    main form{
+        width: 40%;
+    
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: repeat(7, min-content);
+    }
+    main form .opciones{
+        width: 97.5%;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 700px){
+    main form .placeholder{
+        left: 2%;
+    }
+    main form .arrowDown{
+        left: 85%;
+    }
+}
+main form input:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+.error{
+    border: 2px solid #F20505;
+    box-shadow: 0px 0px 7px 3px #BF0F1E;
+}
+main form .checkError:before{
+    content: '';
+    border: 2px solid #F20505;
+    box-shadow: 0px 0px 7px 3px #BF0F1E;
+    border-radius: 3px;
+
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin-right: 5px;
+
+    position: relative;
+    left: 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}

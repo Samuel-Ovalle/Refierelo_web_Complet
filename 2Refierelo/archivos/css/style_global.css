@@ -1,0 +1,21 @@
+:root{
+    --color-1: #003366;
+    --color-2: #02B2E4;
+    --color-3: #F0F2F5;
+    --color-4: #E4E6EB;
+    --color-5: #7b7d7f;
+    --color-6: #85d619;
+    --color-7: #17a308;
+    --color-8: #ffffff;
+    --color-9: #a6a6a6;
+    --color-10: #00DFEE;
+    --color-11: #85d619;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+    color: var(--color-8);
+    box-sizing: border-box;
+}

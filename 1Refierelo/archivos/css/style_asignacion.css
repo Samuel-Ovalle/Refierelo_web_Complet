@@ -1,0 +1,297 @@
+:root{
+    --color-4: #7b7d7f;
+}
+
+main{
+    height: 90vh;
+    width: 89.5vw;
+
+    position: relative;
+    right: 0;
+    transition: right 0.2s, width 0.2s;
+    overflow-y: auto;
+}
+main h1{
+    color: var(--color-1);
+
+    height: 25%;
+    width: 100%;
+    padding-bottom: .5%;
+
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+main div{
+    height: min-content;
+}
+
+main div .buscador{
+    background: #fff;
+    color: var(--color-4);
+    border: none;
+    border-radius: 5px;
+    margin-left: 3%;
+
+    padding: .1%;
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+main div .buscador:focus-visible{
+    outline: 2px solid #00DFEE;
+}
+main div .lupa{
+    background-color: transparent;
+    background-image: url('../../imagenes/lupa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 17px;
+    width: 17px;
+
+    display: inline-block;
+    position: absolute;
+    top: 25.5%;
+    left: 3.3%;
+}
+
+main div .lista{
+    display: grid;
+    grid-template-columns: 2.15% 11.4% 12.9% 5.1% 10.3% 12.3% 12.3% 150px 11.7% 5%;
+    grid-template-rows: 17px;
+    height: 2%;
+    width: 100%;
+
+    position: relative;
+}
+main div .lista span{
+    color: var(--color-4);
+    font-size: .8em;
+    font-weight: 400;
+    text-align: center;
+}
+main div .lista span:nth-child(1){
+    grid-column: 2 / 3;
+}
+
+main div .boxInfo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.15% 10.5% 12.7% 4.3% 10.1% 11.7% 11.7% 11.7% 11.7% 5%;
+    grid-column-gap: .5%;
+    margin-bottom: 10px;
+}
+main div .boxInfo input{
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    height: 25px;
+    width: 100%;
+}
+main div .boxInfo input:focus-visible{
+    outline: 2px solid #00DFEE;
+}
+
+.boxAsig{
+    border-radius: 30px;
+    background: linear-gradient(#003366 -20%, #02B5E7 100%);
+    height: 60%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 26%;
+    top: 20%;
+}
+.boxAsig .cancelar{
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url('../../imagenes/X.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 6.8%;
+    width: 4%;
+
+    position: absolute;
+    left: 96%;
+    top: -.5%;
+}
+.boxAsig .emoji{
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+}
+.boxAsig span{
+    width: 50%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+.boxAsig .boxInput{
+    display: grid;
+    width: 87%;
+    grid-template-columns: 7% 23% 23% 17% 20% 10%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-column-gap: .25%;
+}
+.boxAsig .boxInput input{
+    border: none;
+    border-radius: 5px;
+    color: var(--color-4);
+
+    height: 60%;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 15%;
+}
+.boxAsig .boxInput input::placeholder{
+    font-size: 11px;
+    font-weight: 700;
+}
+.boxAsig .boxInput input:focus-visible{
+    outline: 3px solid #00DFEE;
+}
+.boxAsig .boxInput .cBox{
+    border-radius: 7px;
+    background: #fff;
+    height: 60%;
+    width: 75%;
+}
+.boxAsig .boxInput input[type="checkbox"]{
+    display: none;
+}
+.boxAsig .boxInput .check::before{
+    content: '';
+    background-color: transparent;
+    background-image: url('../../imagenes/chulo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 150%;
+    width: 150%;
+
+    position: relative;
+    bottom: 50%;
+    right: 18%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxAsig .boxInput .sexo{
+    border: none;
+    border-radius: 5px;
+    color: var(--color-4);
+    height: 60%;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 15%;
+
+    font-size: 11px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    text-indent: 1px;
+}
+.boxAsig .boxInput .sexo:focus-visible{
+    outline: 3px solid #00DFEE;
+}
+.boxAsig .boxInput .sexo option{
+    color: var(--color-4);
+    font-size: 11px;
+}
+.boxAsig .enviar{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(#85d619, #17a308);
+    height: 9%;
+    width: 17%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.boxResult{
+    border-radius: 30px;
+    background: linear-gradient(#003366 -20%, #02B5E7 100%);
+    height: 55%;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+.boxResult img{
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+}
+.boxResult span{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.loadBox{
+    border-radius: 30px;
+    background: linear-gradient(#003366, #02B5E7);
+    height: 45%;
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 32%;
+    top: 30%;
+}
+.loadBox img{
+    height: 50%;
+}
+
+.visible{
+    background-color: transparent;
+    background-image: url('../../imagenes/ojo1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    width: 100%;
+    margin-left: 15%;
+
+    display: inline-block;
+}
+
+.asignar{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(#85d619, #17a308);
+    height: 25px;
+    width: 100px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.gestion{
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(#02B5E7, #003366);
+    height: 25px;
+    width: 100px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
